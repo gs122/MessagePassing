@@ -1,8 +1,7 @@
 // INSTRUCTIONS ON HOW TO RUN:
 // Compile command: g++ messagepassing.cpp -o messagepassing.exe
-// Run command: ./messagepassing instructions.txt
-// Program will search for a prose.txt file and run it.
-// My project can only transfer one instruction and execute it
+// Run command: ./messagepassing instructions.txt prose.txt
+// Parent process reads an instruction, sends it to child, and grandchild process returns excerpt from instructions.txt
 
 #include <iostream>
 #include <sys/types.h>     
